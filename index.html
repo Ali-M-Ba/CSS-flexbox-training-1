@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox-project</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #e9ebea;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .card {
+        background-color: white;
+        padding: 0;
+        margin: 20px;
+        flex-basis: 250px;
+      }
+      .card__wrapper {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      .card__feature {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .card__box {
+        padding-right: 35px;
+        padding-left: 35px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      .card__label {
+        font-size: 10px;
+        font-weight: lighter;
+        margin: 0px;
+        color: #9b9dad;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .card__title {
+        margin: 15px 0px;
+        color: #222222;
+      }
+
+      hr {
+        width: 50px;
+      }
+
+      .card__body {
+        padding-top: 5px;
+        font-size: 12px;
+        color: #9b9dad;
+      }
+
+      @media (max-width: 650px) {
+      body {
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .card{
+        max-width: 250px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card">
+      <div class="card__wrapper">
+        <figure class="card__feature">
+          <img
+            src="assets/images/waves.jpg"
+            class="card__img"
+            alt="waves"
+            width="275"
+            height="240"
+          />
+        </figure>
+        <div class="card__box">
+          <header class="card__item card__header">
+            <h6 class="card__item card__item--small card__label">Featured</h6>
+            <h2 class="card__item card__item--small card__title">
+              Blue Ocean<br />Waves Crash
+            </h2>
+          </header>
+          <hr class="card__item card__divider" />
+          <section class="card__item card__body">
+            <p>
+              See the beautiful oceans of the Pacific coast where the water is
+              so clean you can see the sand.
+            </p>
+          </section>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card">
+      <div class="card__wrapper">
+        <figure class="card__feature">
+          <img
+            src="assets/images/bridge.jpg"
+            class="card__img"
+            alt="Bridge"
+            width="275"
+            height="240"
+          />
+        </figure>
+        <div class="card__box">
+          <header class="card__item card__header">
+            <h6 class="card__item card__item--small card__label">Featured</h6>
+            <h2 class="card__item card__item--small card__title">
+              Long Exposure<br />River Bridge
+            </h2>
+          </header>
+          <hr class="card__item card__divider" />
+          <section class="card__item card__body">
+            <p>
+              Long exposure photography is when you leave the shutter open
+              longers than usual to pick up more light.
+            </p>
+          </section>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
